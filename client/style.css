@@ -1,0 +1,156 @@
+
+:root {
+    font-family: Avenir, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+
+    background-color: white;
+    border-bottom: 3px solid rgb(3, 7, 89);
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.header-left h1 {
+    color: rgb(3, 7, 89);
+    font-size: 2rem;
+}
+
+.header-right button {
+    background-color: white;
+    border: 3px solid rgb(3, 7, 89);
+    border-radius: 16px;
+
+    color: rgb(3, 7, 89);
+    font-weight: bold;
+
+    padding: 12px 20px;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.header-right button:hover {
+    background-color: rgb(3, 7, 89);
+    color: white;
+}
+
+
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+    padding: 40px;
+}
+
+
+.card {
+    width: 320px;
+    min-height: 320px;
+
+    background-color: white;
+
+    border: 3px solid rgb(3, 7, 89);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.top-container {
+    background-color: rgb(3, 7, 89);
+
+    color: white;
+
+    padding: 20px;
+}
+
+.top-container h2 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.top-container p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+
+.bottom-container {
+    padding: 20px;
+}
+
+.bottom-container p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.movie-label {
+    color: rgb(3, 7, 89);
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-content {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
