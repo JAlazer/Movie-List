@@ -19,6 +19,9 @@ The following **required** functionality is completed:
   - [x] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
 - [x] **The web app serves an appropriate 404 page when no matching route is defined**
 - [x] **The web app is styled using Picocss**
+- [ ] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+  - [ ] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
 The following **optional** features are implemented:
 
