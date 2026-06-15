@@ -16,33 +16,33 @@ const renderMovies = async () => {
 
             // top container info
             const title = document.createElement('h2')
-            title.textContent = movie.Title
+            title.textContent = movie.title
             topContainer.appendChild(title)
 
             const rating = document.createElement('p')
-            rating.textContent = `⭐ ${movie.LetterboxRating}`
+            rating.textContent = `⭐ ${movie.letterboxrating}`
             topContainer.appendChild(rating)
 
             const genre = document.createElement('p')
-            genre.textContent = movie.Genre
+            genre.textContent = movie.genre
             topContainer.appendChild(genre)
             
             // bottom container
             const director = document.createElement('p')
-            director.textContent = `Director: ${movie.Director}`
+            director.textContent = `Director: ${movie.director}`
             bottomContainer.appendChild(director)
 
             const duration = document.createElement('p')
-            duration.textContent = `Duration: ${movie.Duration} min`
+            duration.textContent = `Duration: ${movie.duration} min`
             bottomContainer.appendChild(duration)
 
             const cast = document.createElement('p')
-            cast.textContent = `Cast: ${movie.MainCast.join(', ')}`
+            cast.textContent = `Cast: ${movie.maincast.join(', ')}`
             bottomContainer.appendChild(cast)
 
             const releaseDate = document.createElement('p')
             releaseDate.textContent =
-                `Released: ${new Date(movie.ReleaseDate).toLocaleDateString()}`
+                `Released: ${new Date(movie.releasedate).toLocaleDateString()}`
             bottomContainer.appendChild(releaseDate)
 
             const link = document.createElement('a')
@@ -81,14 +81,14 @@ const renderMovie = async () => {
     } 
 
     if (movie) {
-        document.getElementById('title').textContent = movie.Title;
-        document.getElementById('director').textContent = `Director: ${movie.Director}`;
-        document.getElementById('genre').textContent = `Genre: ${movie.Genre}`;
-        document.getElementById('duration').textContent = `Duration: ${movie.Duration} min`;
-        document.getElementById('rating').textContent = `Rating: ⭐ ${movie.LetterboxRating}`;
-        document.getElementById('cast').textContent = `Cast: ${movie.MainCast.join(', ')}`;
+        document.getElementById('title').textContent = movie.title;
+        document.getElementById('director').textContent = `Director: ${movie.director}`;
+        document.getElementById('genre').textContent = `Genre: ${movie.genre}`;
+        document.getElementById('duration').textContent = `Duration: ${movie.duration} min`;
+        document.getElementById('rating').textContent = `Rating: ⭐ ${movie.letterboxrating}`;
+        document.getElementById('cast').textContent = `Cast: ${movie.maincast.join(', ')}`;
         document.getElementById('release-date').textContent =
-            `Released: ${new Date(movie.ReleaseDate).toLocaleDateString()}`;
+            `Released: ${new Date(movie.releasedate).toLocaleDateString()}`;
     } else {
         const noGiftMessage = document.createElement('h2')
         noGiftMessage.textContent = 'No movie Available 😞'

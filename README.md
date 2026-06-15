@@ -4,7 +4,7 @@ Submitted by: **Johan Almanzar**
 
 About this web app: **Displaying a list of movies with their relevant information!**
 
-Time spent: **5** hours
+Time spent: **6** hours
 
 ## Required Features
 
@@ -33,7 +33,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='./MovieListDemo.gif' title='Movie List Demo' width='' alt='Video Walkthrough of Movie List' />
+<img src='./MovieListDemo_Database.gif' title='Movie List Demo' width='' alt='Video Walkthrough of Movie List with a dataase' />
 
 GIF created with [ScreenToGif](https://www.screentogif.com/)
 
