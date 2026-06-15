@@ -2,15 +2,14 @@ import express from 'express'
 import path from 'path';
 import { fileURLToPath } from 'url';
 import movieList from '../data/movies.js';
+import { getMovies } from '../controller/movies.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.status(200).json(movieList)
-})
+router.get('/', getMovies)
 
 router.get('/:movieId', (req, res) => {
     const movieId = Number(req.params.movieId)
